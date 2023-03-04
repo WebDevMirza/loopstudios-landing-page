@@ -1,0 +1,36 @@
+:root {
+  /*  ===============================
+      Root Colors
+      ===============================   */
+  --StrongCyan: hsl(172, 67%, 45%);
+  --VeryDarkCyan: hsl(183, 100%, 15%);
+  --DarkGrayishCyan: hsl(186, 14%, 43%);
+  --GrayishCyan: hsl(184, 14%, 56%);
+  --LightGrayishCyan: hsl(185, 41%, 84%);
+  --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+
+  --ff-primary: "Space Mono", monospace;
+  --ff-secondary: "Poppins", sans-serif;
+  --fs-fontsize: 1rem;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-400);
+}
+
+/* ==============================
+Layout
+============================== */
