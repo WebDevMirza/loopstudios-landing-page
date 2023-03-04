@@ -2,23 +2,20 @@
   /*  ===============================
       Root Colors
       ===============================   */
-  --StrongCyan: hsl(172, 67%, 45%);
-  --VeryDarkCyan: hsl(183, 100%, 15%);
-  --DarkGrayishCyan: hsl(186, 14%, 43%);
-  --GrayishCyan: hsl(184, 14%, 56%);
-  --LightGrayishCyan: hsl(185, 41%, 84%);
-  --VeryLightGrayishCyan: hsl(189, 41%, 97%);
   --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
 
   /* ===============================
      Fonts
      ===============================  */
 
-  --ff-primary: "Space Mono", monospace;
-  --ff-secondary: "Poppins", sans-serif;
+  --ff-primary: "Alata", sans-serif;
+  --ff-secondary: "Josefin Sans", sans-serif;
   --fs-fontsize: 1rem;
+  --fw-300: 300;
   --fw-400: 400;
-  --fw-700: 700;
 }
 
 /* ==============================
@@ -28,9 +25,15 @@
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-fontsize);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-300);
 }
 
 /* ==============================
 Layout
 ============================== */
+
+.wrapper {
+  max-width: 1440px;
+  width: 85%;
+  margin-inline: auto;
+}
