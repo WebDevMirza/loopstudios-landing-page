@@ -1,5 +1,6 @@
 import "./assets/styles/app.css";
 import Header from "./components/Header";
+import ShowOff from "./components/ShowOff";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <header>
         <Header />
       </header>
+      <main>
+        <ShowOff />
+      </main>
     </>
   );
 }

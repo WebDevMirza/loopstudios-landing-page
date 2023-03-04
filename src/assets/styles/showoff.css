@@ -1,0 +1,38 @@
+.showoff-body {
+  background-color: var(--White);
+
+  padding: 1rem 0.5rem 0;
+  text-align: center;
+}
+
+.showoff-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--ff-secondary);
+  line-height: 1;
+}
+
+.showoff-text {
+  line-height: 1.6;
+  color: var(--DarkGray);
+}
+
+@media (min-width: 1024px) {
+  .showoff-img img {
+    width: 65%;
+  }
+
+  .showoff {
+    position: relative;
+  }
+
+  .showoff-body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+
+    padding: 2rem 3.5rem 0;
+    text-align: left;
+  }
+}
