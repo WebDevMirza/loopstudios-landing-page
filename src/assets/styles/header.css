@@ -100,6 +100,7 @@
   .nav-desktop a {
     position: relative;
   }
+
   .nav-desktop a::after {
     position: absolute;
     content: "";

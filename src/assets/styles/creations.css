@@ -17,6 +17,24 @@
 .card {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover::after,
+.card:focus-visible::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--DarkGray);
+  opacity: 0.65;
+  z-index: 9;
+}
+
+.card:hover {
+  scale: 1.01;
 }
 
 .card-title {
@@ -28,7 +46,7 @@
   left: 18px;
   font-size: 1.25rem;
   width: 9ch;
-  z-index: 9;
+  z-index: 99;
 }
 
 .card-title::after {
@@ -63,6 +81,15 @@
   border: 2px solid var(--VeryDarkGray);
   letter-spacing: 0.3em;
   padding: 1rem 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: -1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.creation-seeall a:hover {
+  background-color: var(--Black);
+  color: var(--White);
+  transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: 1024px) {
@@ -96,5 +123,9 @@
   .card img {
     width: 100%;
     object-fit: contain;
+  }
+
+  .creation-seeall a {
+    margin: 0;
   }
 }

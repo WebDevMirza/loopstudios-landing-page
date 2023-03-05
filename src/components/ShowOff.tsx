@@ -5,19 +5,13 @@ import "../assets/styles/showoff.css";
 const ShowOff = () => {
   return (
     <>
-      <section>
+      <section className="v-gap">
         <div className="wrapper">
           <div className="showoff">
             <div className="showoff-img">
               <picture>
-                <source
-                  media="(min-width: 1024px)"
-                  srcSet={ShowOffIMG}
-                />
-                <img
-                  src={ShowOffImgMobile}
-                  alt="Show off image"
-                />
+                <source media="(min-width: 1024px)" srcSet={ShowOffIMG} />
+                <img src={ShowOffImgMobile} alt="Show off image" />
               </picture>
             </div>
             <div className="showoff-body">

@@ -1,5 +1,6 @@
 import "./assets/styles/app.css";
 import Creation from "./components/Creation";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ShowOff from "./components/ShowOff";
 
@@ -13,6 +14,9 @@ function App() {
         <ShowOff />
         <Creation />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

@@ -37,3 +37,7 @@ Layout
   width: 85%;
   margin-inline: auto;
 }
+
+.v-gap {
+  margin-top: 5rem;
+}

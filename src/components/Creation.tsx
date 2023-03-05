@@ -76,7 +76,7 @@ const Creation = () => {
 
   return (
     <>
-      <section>
+      <section className="v-gap">
         <div className="wrapper">
           <div className="creation">
             <div className="creation-title">
