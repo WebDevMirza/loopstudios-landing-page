@@ -1,7 +1,22 @@
 import "../assets/styles/header.css";
 import Logo from "../assets/images/logo.svg";
+import { ChangeEventHandler, useEffect, useState } from "react";
 
 const Header = () => {
+  const [mobileNav, setmobileNav] = useState(false);
+
+  const btnChecked: ChangeEventHandler<HTMLInputElement> = (e) => {
+    e.target.checked ? setmobileNav(true) : setmobileNav(false);
+  };
+
+  useEffect(() => {
+    if (mobileNav) {
+      document.getElementsByTagName("body")[0].classList.add("bg-nav");
+    } else {
+      document.getElementsByTagName("body")[0].classList.remove("bg-nav");
+    }
+  }, [mobileNav]);
+
   return (
     <>
       <div className="bg-header">
@@ -9,14 +24,12 @@ const Header = () => {
           <div className="header">
             <div className="header-menu">
               <div className="logo">
-                <img
-                  src={Logo}
-                  alt="loopstudios"
-                />
+                <img src={Logo} alt="loopstudios" />
               </div>
 
-              <label htmlFor="mobile-toggle">
+              <label className="toggle-handle" htmlFor="mobile-toggle">
                 <input
+                  onChange={btnChecked}
                   className="mobile-toggle"
                   type="checkbox"
                   name="mobile-toggle"
@@ -24,7 +37,11 @@ const Header = () => {
                 />
               </label>
 
-              <nav className="nav-mobile">
+              <nav className={mobileNav ? "nav-mobile" : "nav-close"}>
+                <div className="nav-logo">
+                  <img src={Logo} alt="loopstudios" />
+                </div>
+
                 <ul>
                   <li>
                     <a href="#">About</a>
