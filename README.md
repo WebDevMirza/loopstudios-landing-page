@@ -5,26 +5,13 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ## Table of contents
 
 - [Screenshot](#screenshot)
-- [What I've Learnt](#What-I've-Learnt)
-- [Willing To Reach Advanced Goals](#Willing-To-Reach-Advanced-Goals)
 - [Author](#author)
 - [Date](#date)
 
-## Next Target
-
--
-
 ## Screenshot
 
-![](./ss.gif)
-![](./lg.webp)
-![](./sm.webp)
-
-## What I've Learnt
-
--
-
-## Willing To Reach Advanced Goals
+![](./ss/lg.webp)
+<img src="./ss/sm.webp" width="375"/>
 
 -
 
@@ -35,4 +22,4 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ## Date
 
-- 3 March 2023
+- 6 March 2023
