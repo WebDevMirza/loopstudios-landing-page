@@ -117,6 +117,7 @@
 
   .bg-header {
     background: url(../images/desktop/image-hero.jpg) no-repeat center;
+    background-size: cover;
   }
 
   .header-menu {
