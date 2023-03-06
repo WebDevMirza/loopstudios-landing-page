@@ -90,7 +90,7 @@ const Creation = () => {
                     <div className="card-img">
                       <picture>
                         <source media="(min-width: 1024px)" srcSet={v.imgDesktop} />
-                        <img src={v.imgMobile} alt={v.title} />
+                        <img src={v.imgMobile} alt={v.title} width="233" height="410" />
                       </picture>
                     </div>
                     <div className="card-title">

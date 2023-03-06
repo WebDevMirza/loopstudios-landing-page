@@ -11,7 +11,7 @@ const ShowOff = () => {
             <div className="showoff-img">
               <picture>
                 <source media="(min-width: 1024px)" srcSet={ShowOffIMG} />
-                <img src={ShowOffImgMobile} alt="Show off image" />
+                <img src={ShowOffImgMobile} alt="Show off image" width="655" height="447" />
               </picture>
             </div>
             <div className="showoff-body">
